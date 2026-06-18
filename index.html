@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JobsNext — User Guide</title>
-  <meta name="description" content="Complete user guide and product tour for the JobsNext app — find your next opportunity or hire great talent." />
+  <meta name="description" content="Simple user guide for the JobsNext app." />
 
   <!-- ══════════════════════════════════════════════════════════
        FONT — Poppins (matches app theme.dart)
@@ -1724,9 +1724,9 @@
 
     <nav class="top-nav__links" aria-label="Sections">
       <a href="#welcome"   class="top-nav__link active"  data-nav="welcome">Welcome</a>
+      <a href="#screens"   class="top-nav__link" data-nav="screens">Screens</a>
       <a href="#features"  class="top-nav__link" data-nav="features">Features</a>
       <a href="#walkthrough" class="top-nav__link" data-nav="walkthrough">Walkthrough</a>
-      <a href="#screens"   class="top-nav__link" data-nav="screens">Screens</a>
       <a href="#faq"       class="top-nav__link" data-nav="faq">FAQ</a>
       <a href="#tips"      class="top-nav__link" data-nav="tips">Tips</a>
       <a href="#checklist" class="top-nav__link" data-nav="checklist">Checklist</a>
@@ -1768,6 +1768,10 @@
         <span>🏠</span> Welcome
         <span class="side-nav__indicator"></span>
       </button>
+      <button class="side-nav__item" data-side="screens" onclick="scrollToSection('screens')">
+        <span>📱</span> Screens Guide
+        <span class="side-nav__indicator"></span>
+      </button>
       <button class="side-nav__item" data-side="features" onclick="scrollToSection('features')">
         <span>⚡</span> Feature Overview
         <span class="side-nav__indicator"></span>
@@ -1777,10 +1781,6 @@
       <div class="side-nav__section-label">Guides</div>
       <button class="side-nav__item" data-side="walkthrough" onclick="scrollToSection('walkthrough')">
         <span>📖</span> Step-by-Step
-        <span class="side-nav__indicator"></span>
-      </button>
-      <button class="side-nav__item" data-side="screens" onclick="scrollToSection('screens')">
-        <span>📱</span> Screens Guide
         <span class="side-nav__indicator"></span>
       </button>
     </div>
@@ -1825,32 +1825,31 @@
             </div>
 
             <h1 class="hero-title">
-              Your complete guide to <span>JobsNext</span>
+              Learn <span>JobsNext</span> step by step
             </h1>
 
             <p class="hero-desc">
-              Whether you're a jobseeker hunting your next opportunity or an employer
-              looking to hire top talent — this guide walks you through every feature,
-              screen, and workflow in the app.
+              Use this guide to learn the app. If you want a job, it helps you find one.
+              If you hire people, it shows you how to post jobs.
             </p>
 
             <div class="hero-cta">
               <button class="btn btn--filled" onclick="scrollToSection('walkthrough')">
-                📖 Start the walkthrough
+                📖 Start step by step
               </button>
               <button class="btn btn--outlined" onclick="startTour()">
-                ▶ Take a guided tour
+                ▶ Show me around
               </button>
             </div>
 
             <div class="hero-stats">
               <div>
                 <div class="hero-stat__value">7</div>
-                <div class="hero-stat__label">Sections covered</div>
+                <div class="hero-stat__label">Parts to read</div>
               </div>
               <div>
                 <div class="hero-stat__value">20+</div>
-                <div class="hero-stat__label">Screens explained</div>
+                <div class="hero-stat__label">Screens shown</div>
               </div>
               <div>
                 <div class="hero-stat__value">2</div>
@@ -1873,7 +1872,7 @@
                 />
                 <div class="screen-placeholder" id="hero-phone-placeholder">
                   <div class="screen-placeholder__icon">🏠</div>
-                  <div class="screen-placeholder__label">Home Screen Screenshot</div>
+                  <div class="screen-placeholder__label">Home screen picture</div>
                   <div class="screen-placeholder__filename">splash.jpg</div>
                 </div>
               </div>
@@ -1890,9 +1889,9 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">⚡ Feature Overview</div>
-          <h2 class="section-title">Everything JobsNext can do</h2>
+          <h2 class="section-title">What JobsNext can do</h2>
           <p class="section-desc">
-            A quick look at the core features available to you — tap any card to learn more.
+            Here are the main things in JobsNext. Tap a card to learn more.
           </p>
         </div>
 
@@ -1901,10 +1900,10 @@
           <!-- Jobseeker features -->
           <div class="feature-card" tabindex="0" role="article" aria-label="Job Discovery feature">
             <div class="feature-card__icon">🔍</div>
-            <div class="feature-card__title">Smart Job Discovery</div>
+            <div class="feature-card__title">Find jobs easily</div>
             <div class="feature-card__desc">
-              Browse thousands of listings with powerful filters — location, salary, type, and more.
-              AI-powered match percentages show how well you fit each role.
+              Look at many jobs. Use filters like place, pay, and job type.
+              Jone AI shows if a job fits you.
             </div>
           </div>
 
@@ -1913,100 +1912,94 @@
             <div class="feature-card__badge">AI</div>
             <div class="feature-card__title">AI Match Score</div>
             <div class="feature-card__desc">
-              Jone — our AI assistant — analyses your profile against job requirements and gives you
-              a real-time match percentage on every listing.
+              Jone AI reads your profile and the job. It shows how well the job fits you.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="Quick Apply feature">
             <div class="feature-card__icon">⚡</div>
-            <div class="feature-card__title">One-Tap Apply</div>
+            <div class="feature-card__title">Apply fast</div>
             <div class="feature-card__desc">
-              Apply to jobs in seconds using your saved profile. Upload a resume, add a cover letter
-              (optional), and submit — all without leaving the app.
+              Use your saved profile to apply fast. Add your resume.
+              Add a cover letter if you want. Then tap submit.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="Save Jobs feature">
             <div class="feature-card__icon">🔖</div>
-            <div class="feature-card__title">Save &amp; Track Jobs</div>
+            <div class="feature-card__title">Save and check jobs</div>
             <div class="feature-card__desc">
-              Bookmark any job to revisit later. Your Saved tab keeps everything in one place with
-              quick-apply actions.
+              Save jobs you like. Find them later in the Saved tab. Apply from there.
             </div>
           </div>
 
-          <div class="feature-card" tabindex="0" role="article" aria-label="Application Tracking feature">
+          <div class="feature-card" tabindex="0" role="article" aria-label="Check your applications feature">
             <div class="feature-card__icon">📊</div>
-            <div class="feature-card__title">Application Tracking</div>
+            <div class="feature-card__title">Check your applications</div>
             <div class="feature-card__desc">
-              Monitor every application in real-time. See status updates — submitted, under review,
-              interview scheduled, or outcome decided.
+              See what happened to each job you applied for.
+              It may say sent, checking, interview, or done.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="Assessments feature">
             <div class="feature-card__icon">📝</div>
-            <div class="feature-card__title">Skills Assessments</div>
+            <div class="feature-card__title">Skill tests</div>
             <div class="feature-card__desc">
-              Complete employer-set assessments directly in the app. Timed, structured questions
-              that demonstrate your skills before an interview.
+              Some employers send tests. Do the test in the app. It helps show what you know.
             </div>
           </div>
 
-          <div class="feature-card" tabindex="0" role="article" aria-label="Career Resources feature">
+          <div class="feature-card" tabindex="0" role="article" aria-label="Career help feature">
             <div class="feature-card__icon">📚</div>
-            <div class="feature-card__title">Career Resources</div>
+            <div class="feature-card__title">Career help</div>
             <div class="feature-card__desc">
-              Access CPD trackers, structured learning paths, interview prep tools, and more —
-              all designed to advance your career.
+              Find tools that help you learn, get ready for interviews,
+              and grow in your job.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="Employer features">
             <div class="feature-card__icon">🏢</div>
             <div class="feature-card__badge">Employer</div>
-            <div class="feature-card__title">Employer Dashboard</div>
+            <div class="feature-card__title">Employer home</div>
             <div class="feature-card__desc">
-              Post jobs, manage candidates, review applications, and run assessments —
-              all from a dedicated employer workspace with subscription management.
+              Employers can post jobs, see people who applied, check forms,
+              send tests, and manage plans.
             </div>
           </div>
 
-          <div class="feature-card" tabindex="0" role="article" aria-label="Premium Companies feature">
+          <div class="feature-card" tabindex="0" role="article" aria-label="Top companies feature">
             <div class="feature-card__icon">⭐</div>
-            <div class="feature-card__title">Premium Companies</div>
+            <div class="feature-card__title">Top companies</div>
             <div class="feature-card__desc">
-              Featured employers get prominent placement. Jobseekers can browse company profiles
-              and all their open roles in one place.
+              Some companies are shown first. You can open a company page and see its jobs.
             </div>
           </div>
 
-          <div class="feature-card" tabindex="0" role="article" aria-label="Push Notifications feature">
+          <div class="feature-card" tabindex="0" role="article" aria-label="Phone alerts feature">
             <div class="feature-card__icon">🔔</div>
-            <div class="feature-card__title">Push Notifications</div>
+            <div class="feature-card__title">Phone alerts</div>
             <div class="feature-card__desc">
-              Get instant alerts for new matching jobs, application status changes,
-              and employer messages — never miss an opportunity.
+              Get phone alerts for new jobs, job updates, and messages from employers.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="App Lock feature">
             <div class="feature-card__icon">🔒</div>
-            <div class="feature-card__title">App Lock / Biometrics</div>
+            <div class="feature-card__title">App lock</div>
             <div class="feature-card__desc">
-              Keep your job search private. Enable Face ID, fingerprint, or PIN lock
-              with a configurable time-delay trigger.
+              Keep the app safe. Use Face ID, finger scan, or a PIN to lock it.
             </div>
           </div>
 
           <div class="feature-card" tabindex="0" role="article" aria-label="Jone AI Chat feature">
             <div class="feature-card__icon">💬</div>
             <div class="feature-card__badge">AI</div>
-            <div class="feature-card__title">Jone AI Assistant</div>
+            <div class="feature-card__title">Jone AI helper</div>
             <div class="feature-card__desc">
-              Our built-in AI assistant helps jobseekers with tips, interview prep,
-              and career advice — and helps employers write better job ads.
+              Jone AI can help jobseekers with tips.
+              It can help employers write job posts.
             </div>
           </div>
 
@@ -2021,8 +2014,8 @@
       <div class="container--narrow">
         <div class="section-header">
           <div class="section-badge">📖 Walkthrough</div>
-          <h2 class="section-title">Step-by-step guide</h2>
-          <p class="section-desc">Switch between <strong>Jobseeker</strong> and <strong>Employer</strong> using the role toggle in the top-right to see each flow's steps.</p>
+          <h2 class="section-title">Easy steps</h2>
+          <p class="section-desc">Choose <strong>Jobseeker</strong> or <strong>Employer</strong> at the top. Then follow the steps for that user.</p>
         </div>
 
         <div class="walkthrough-wrapper">
@@ -2035,7 +2028,7 @@
           <div class="walkthrough-header">
             <div class="step-counter">Step <span id="wt-current">1</span> of <span id="wt-total">10</span></div>
             <div class="walkthrough-nav">
-              <button class="btn btn--outlined btn--sm" id="wt-prev" onclick="wtNav(-1)" aria-label="Previous step">← Prev</button>
+              <button class="btn btn--outlined btn--sm" id="wt-prev" onclick="wtNav(-1)" aria-label="Previous step">← Back</button>
               <button class="btn btn--filled btn--sm" id="wt-next" onclick="wtNav(1)" aria-label="Next step">Next →</button>
             </div>
           </div>
@@ -2047,15 +2040,15 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">1</div>
-                <div class="walkthrough-step-title">Splash Screen &amp; App Open</div>
+                <div class="walkthrough-step-title">Open the app</div>
                 <div class="walkthrough-step-desc">
-                  Open JobsNext — you'll see a branded animated splash screen while the app initialises.
-                  After a moment it lands directly on the <strong>Browse Jobs</strong> screen.
-                  No login required to start exploring.
+                  Open JobsNext. You will see the first app screen.
+                  Then you will go to <strong>Browse Jobs</strong>.
+                  You do not need to log in to look at jobs.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">💡</div>
-                  <div class="tip-box__text"><strong>Note:</strong> The app always opens to Browse as a guest. You only need to sign in when you want to save or apply to a job.</div>
+                  <div class="tip-box__text"><strong>Note:</strong> You can look at jobs first. Sign in only when you want to save a job or apply.</div>
                 </div>
               </div>
               <div>
@@ -2064,7 +2057,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">🚀</div>
                     <div class="screenshot-slot__filename">splash.jpg</div>
-                    <div class="screenshot-slot__hint">Animated splash screen</div>
+                    <div class="screenshot-slot__hint">First app screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2077,11 +2070,9 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">2</div>
-                <div class="walkthrough-step-title">Browse Jobs as Guest</div>
+                <div class="walkthrough-step-title">Look at jobs without login</div>
                 <div class="walkthrough-step-desc">
-                  Explore thousands of listings without an account. Use the <strong>search bar</strong>
-                  to find by keyword, company, or location. Tap the <strong>filter icon</strong> to
-                  narrow by type, salary, and more. Tap any job card to read the full description.
+                  You can look at jobs without an account. Tap the <strong>search bar</strong> to search. Tap the <strong>filter icon</strong> to choose job type, pay, and more. Tap a job card to read it.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">🔍 Keyword search</span>
@@ -2096,7 +2087,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">🔍</div>
                     <div class="screenshot-slot__filename">js_browse_guest.jpg</div>
-                    <div class="screenshot-slot__hint">Browse screen (guest)</div>
+                    <div class="screenshot-slot__hint">Browse screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2109,17 +2100,15 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">3</div>
-                <div class="walkthrough-step-title">Sign In or Create Account</div>
+                <div class="walkthrough-step-title">Sign in or make an account</div>
                 <div class="walkthrough-step-desc">
-                  When you try to save or apply to a job, the app prompts sign-in.
-                  Tap <strong>Sign in</strong>, choose <em>Jobseeker</em>, then log into an
-                  existing account. To sign up, select the **Create Account** tab at the top of the auth screen and register a new one.
+                  When you save or apply, the app asks you to sign in. Tap <strong>Sign in</strong>. Choose <em>Jobseeker</em>. Log in, or tap <strong>Create Account</strong> to make a new account.
                 </div>
                 <ol style="padding-left:var(--space-lg);display:flex;flex-direction:column;gap:8px;margin-top:var(--space-md);">
-                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">1.</strong> Tap Sign in on any screen</li>
+                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">1.</strong> Tap Sign in</li>
                   <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">2.</strong> Choose <em>Jobseeker</em></li>
-                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">3.</strong> Toggle between **Sign In** and **Create Account** tabs</li>
-                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">4.</strong> Enter email &amp; password details to proceed</li>
+                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">3.</strong> Choose <strong>Sign In</strong> or <strong>Create Account</strong></li>
+                  <li style="font-size:.875rem;color:var(--color-on-surface-variant);"><strong style="color:var(--color-on-surface);">4.</strong> Type your email and password</li>
                 </ol>
               </div>
               <div>
@@ -2128,7 +2117,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">🔐</div>
                     <div class="screenshot-slot__filename">js_auth.jpg</div>
-                    <div class="screenshot-slot__hint">Jobseeker auth screen</div>
+                    <div class="screenshot-slot__hint">Jobseeker sign in screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2141,24 +2130,23 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">4</div>
-                <div class="walkthrough-step-title">Verify Your Email (OTP)</div>
+                <div class="walkthrough-step-title">Check your email code</div>
                 <div class="walkthrough-step-desc">
-                  After registering, JobsNext sends a <strong>6-digit OTP</strong> to your email.
-                  Enter it on the verification screen to activate your account.
-                  The OTP expires in 10 minutes — tap <strong>Resend</strong> if needed.
+                  After you sign up, JobsNext sends a <strong>6-number code</strong> to your email.
+                  Type the code in the app. If you do not get it, tap <strong>Resend</strong>.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">📧</div>
-                  <div class="tip-box__text"><strong>Check spam:</strong> If you don't see it within 2 minutes, check your junk/spam folder before tapping Resend.</div>
+                  <div class="tip-box__text"><strong>Check spam:</strong> If you do not see the email, look in your spam or junk folder.</div>
                 </div>
               </div>
               <div>
                 <div class="screenshot-slot" id="ss-js4">
-                  <img src="js_otp.jpg" alt="OTP verification" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
+                  <img src="js_otp.jpg" alt="Email code screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">📬</div>
                     <div class="screenshot-slot__filename">js_otp.jpg</div>
-                    <div class="screenshot-slot__hint">OTP verification screen</div>
+                    <div class="screenshot-slot__hint">Email code screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2171,12 +2159,9 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">5</div>
-                <div class="walkthrough-step-title">Complete Your Profile</div>
+                <div class="walkthrough-step-title">Finish your profile</div>
                 <div class="walkthrough-step-desc">
-                  After verification you're guided through a multi-step profile wizard.
-                  Add your <strong>work experience</strong>, <strong>education</strong>,
-                  <strong>skills</strong>, and upload your <strong>resume</strong>.
-                  A complete profile powers your AI match scores.
+                  After your email is checked, fill in your profile. Add your <strong>work</strong>, <strong>school</strong>, <strong>skills</strong>, and <strong>resume</strong>. A full profile helps Jone AI find better jobs.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">💼 Experience</span>
@@ -2186,7 +2171,7 @@
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🤖</div>
-                  <div class="tip-box__text"><strong>AI Tip:</strong> A 100% complete profile gives the most accurate match scores. Add at least 5 skills and one work experience entry.</div>
+                  <div class="tip-box__text"><strong>Tip:</strong> A full profile helps Jone AI work better. Add at least 5 skills and one job you had.</div>
                 </div>
               </div>
               <div>
@@ -2195,7 +2180,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">👤</div>
                     <div class="screenshot-slot__filename">js_complete_profile.jpg</div>
-                    <div class="screenshot-slot__hint">Profile setup wizard</div>
+                    <div class="screenshot-slot__hint">Profile setup screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2208,12 +2193,11 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">6</div>
-                <div class="walkthrough-step-title">Home Screen (Logged In)</div>
+                <div class="walkthrough-step-title">Home screen after login</div>
                 <div class="walkthrough-step-desc">
-                  After setup you land on your personalised <strong>Home screen</strong>.
-                  It shows AI-recommended jobs, quick-explore shortcuts (Companies, Resources),
-                  and a search bar. The bottom navigation provides access to all 5 tabs:
-                  Home · Browse · Saved · Applied · Profile.
+                  After setup, you see your <strong>Home screen</strong>.
+                  It shows jobs for you, company links, help links, and search.
+                  Use the bottom bar to open Home, Browse, Saved, Applied, and Profile.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">🏠 Home</span>
@@ -2229,7 +2213,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">🏠</div>
                     <div class="screenshot-slot__filename">js_home.jpg</div>
-                    <div class="screenshot-slot__hint">Home screen (logged in)</div>
+                    <div class="screenshot-slot__hint">Home screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2242,16 +2226,13 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">7</div>
-                <div class="walkthrough-step-title">Job Detail &amp; Bookmarking</div>
+                <div class="walkthrough-step-title">Job details and save</div>
                 <div class="walkthrough-step-desc">
-                  Tap any job card to open the full <strong>Job Detail</strong> screen.
-                  See the company header, full description, requirements, salary, close date,
-                  and your <strong>AI match score</strong>.
-                  Tap the bookmark icon to save it. Tap <strong>Apply Now</strong> when ready.
+                  Tap a job card to open <strong>Job Detail</strong>. Read about the company, job, pay, close date, and your <strong>AI match score</strong>. Tap the bookmark to save. Tap <strong>Apply Now</strong> to apply.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🤖</div>
-                  <div class="tip-box__text"><strong>Match Score:</strong> Tap the match % badge to see exactly which profile fields contributed to your score and which ones to improve.</div>
+                  <div class="tip-box__text"><strong>Match Score:</strong> Tap the score to see why the job fits you and what to improve.</div>
                 </div>
               </div>
               <div>
@@ -2273,12 +2254,9 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">8</div>
-                <div class="walkthrough-step-title">Apply to a Job</div>
+                <div class="walkthrough-step-title">Apply for a job</div>
                 <div class="walkthrough-step-desc">
-                  Tap <strong>Apply Now</strong> from Job Detail to open the application form.
-                  Select your resume (upload or use saved), write a cover letter
-                  (or generate one with Jone AI), answer any employer screening questions,
-                  and tap <strong>Submit</strong>.
+                  Tap <strong>Apply Now</strong>. Choose your resume. Write a cover letter, or ask Jone AI to help. Answer any questions. Tap <strong>Submit</strong>.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">📄 Resume</span>
@@ -2293,7 +2271,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">📤</div>
                     <div class="screenshot-slot__filename">js_apply.jpg</div>
-                    <div class="screenshot-slot__hint">Application form</div>
+                    <div class="screenshot-slot__hint">Apply form</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2306,13 +2284,11 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">9</div>
-                <div class="walkthrough-step-title">Track Your Applications</div>
+                <div class="walkthrough-step-title">Check your applications</div>
                 <div class="walkthrough-step-desc">
-                  The <strong>Applied</strong> tab shows every job you've submitted.
-                  Each application has a colour-coded status badge:
-                  Submitted · Under Review · Assessment Due · Interview · Accepted · Rejected.
-                  Tap any application to see the full timeline.
-                  If an employer sends an assessment, an <strong>Assessment Due</strong> button appears — tap it to start.
+                  The <strong>Applied</strong> tab shows the jobs you applied for.
+                  Each job has a status, like Sent, Checking, Test Due, Interview, Accepted, or Rejected.
+                  Tap an application to see more. If you see <strong>Assessment Due</strong>, tap it to start the test.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">📬 Submitted</span>
@@ -2328,7 +2304,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">📊</div>
                     <div class="screenshot-slot__filename">js_applied.jpg</div>
-                    <div class="screenshot-slot__hint">Applied jobs tracker</div>
+                    <div class="screenshot-slot__hint">Applied jobs screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2341,11 +2317,9 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">10</div>
-                <div class="walkthrough-step-title">Settings &amp; Account Security</div>
+                <div class="walkthrough-step-title">Settings and safety</div>
                 <div class="walkthrough-step-desc">
-                  Access <strong>Settings</strong> from the Profile tab (tap the cog icon).
-                  Manage notifications, set up biometric **App Lock** for privacy, or request permanent **Account Deletion**.
-                  To switch to an employer view, note that role conversion isn't supported; you must log out and create a separate account with a different email.
+                  Open <strong>Settings</strong> from Profile. You can change alerts, turn on <strong>App Lock</strong>, or delete your account. To use Employer mode, log out and make a new employer account with another email.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);margin-bottom:var(--space-lg);">
                   <span class="chip chip--selected">🔒 App Lock (Biometrics/PIN)</span>
@@ -2355,11 +2329,11 @@
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🎉</div>
-                  <div class="tip-box__text"><strong>You're all set!</strong> Head back to the app and start your job search. Use the checklist below to track your onboarding progress.</div>
+                  <div class="tip-box__text"><strong>You are ready!</strong> Go back to the app and start looking for jobs. Use the checklist below to track your steps.</div>
                 </div>
                 <div class="mt-xl">
                   <button class="btn btn--filled" onclick="scrollToSection('checklist')">
-                    ✅ Go to Checklist
+                    ✅ Open checklist
                   </button>
                 </div>
               </div>
@@ -2384,16 +2358,13 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">1</div>
-                <div class="walkthrough-step-title">Sign Up as Employer</div>
+                <div class="walkthrough-step-title">Make an employer account</div>
                 <div class="walkthrough-step-desc">
-                  Open JobsNext and tap <strong>Sign in</strong>.
-                  On the auth screen switch to the <strong>Employer</strong> tab.
-                  Enter your company name, official corporate email, authorized registration number, and password to register a new profile.
-                  The employer theme uses the orange colour palette throughout.
+                  Open JobsNext and tap <strong>Sign in</strong>. Choose <strong>Employer</strong>. Type your company name, company email, company number, and password.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🏢</div>
-                  <div class="tip-box__text"><strong>Separate accounts:</strong> Jobseeker and Employer are distinct account types — use a separate email for each. You cannot switch between roles on the same account.</div>
+                  <div class="tip-box__text"><strong>Use separate accounts:</strong> Jobseeker and Employer are different. Use a different email for each one.</div>
                 </div>
               </div>
               <div>
@@ -2402,7 +2373,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">🔐</div>
                     <div class="screenshot-slot__filename">em_auth.jpg</div>
-                    <div class="screenshot-slot__hint">Employer auth screen</div>
+                    <div class="screenshot-slot__hint">Employer sign in screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2415,24 +2386,22 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">2</div>
-                <div class="walkthrough-step-title">Verify Your Email</div>
+                <div class="walkthrough-step-title">Check your email</div>
                 <div class="walkthrough-step-desc">
-                  Employer accounts require email verification before posting jobs.
-                  Check your inbox for the verification email and click the link,
-                  or enter the code shown. You cannot post jobs until your email is confirmed.
+                  Employers must check their email before posting jobs. Open the email and click the link, or type the code in the app.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">📧</div>
-                  <div class="tip-box__text"><strong>Check spam:</strong> If the email doesn't arrive within 2 minutes, check your junk folder and tap Resend on the verification screen.</div>
+                  <div class="tip-box__text"><strong>Check spam:</strong> If the email does not come soon, check your junk folder and tap Resend.</div>
                 </div>
               </div>
               <div>
                 <div class="screenshot-slot" id="ss-em2">
-                  <img src="em_email_verify.jpg" alt="Email verification" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
+                  <img src="em_email_verify.jpg" alt="Email code screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">📬</div>
                     <div class="screenshot-slot__filename">em_email_verify.jpg</div>
-                    <div class="screenshot-slot__hint">Employer email verification</div>
+                    <div class="screenshot-slot__hint">Employer email code screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2445,12 +2414,11 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">3</div>
-                <div class="walkthrough-step-title">Employer Dashboard</div>
+                <div class="walkthrough-step-title">Employer home</div>
                 <div class="walkthrough-step-desc">
-                  After setup you land on the <strong>Employer Dashboard</strong> — your command centre.
-                  See active job postings, total applications, recent candidate activity,
-                  and quick-action buttons.
-                  The bottom nav: Dashboard · Job Postings · Assessments · Profile.
+                  After setup, you see the <strong>Employer home</strong>.
+                  You can see your jobs, people who applied, and quick buttons.
+                  Use the bottom bar for Dashboard, Jobs, Assessments, and Profile.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">📊 Stats overview</span>
@@ -2473,21 +2441,20 @@
             </div>
           </div>
 
-          <!-- EM STEP 4: Post a Job -->
+          <!-- EM STEP 4: Post a job -->
           <div class="walkthrough-content" id="wt-em-step-4">
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">4</div>
-                <div class="walkthrough-step-title">Post a Job</div>
+                <div class="walkthrough-step-title">Post a job</div>
                 <div class="walkthrough-step-desc">
-                  Tap <strong>＋ Post Job</strong> from the Dashboard or Job Postings tab.
-                  Fill in title, description, requirements, salary range, location,
-                  employment type, and close date. Preview your listing then publish.
-                  Job credits are consumed per posting based on your subscription plan.
+                  Tap <strong>+ Post Job</strong>. Add the job title, details, needs,
+                  pay, place, job type, and close date. Check it. Then post it.
+                  One job post uses one job credit.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🤖</div>
-                  <div class="tip-box__text"><strong>Jone AI:</strong> Tap "Generate with AI" to have Jone write a compelling job description based on your inputs. Edit it to match your company tone.</div>
+                  <div class="tip-box__text"><strong>Jone AI:</strong> Tap "Generate with AI" to let Jone help write the job. Read it and edit it before you post.</div>
                 </div>
               </div>
               <div>
@@ -2504,17 +2471,14 @@
             </div>
           </div>
 
-          <!-- EM STEP 5: Manage Candidates -->
+          <!-- EM STEP 5: Check people who applied -->
           <div class="walkthrough-content" id="wt-em-step-5">
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">5</div>
-                <div class="walkthrough-step-title">Manage Candidates</div>
+                <div class="walkthrough-step-title">Check people who applied</div>
                 <div class="walkthrough-step-desc">
-                  Tap a job posting to see its <strong>Candidates</strong> list.
-                  Filter by status and sort by match score or date.
-                  Tap a candidate to view their full resume, profile, and application.
-                  Update their status, send an assessment, or move them to the next stage.
+                  Tap a job post to see <strong>Candidates</strong>. Filter or sort the list. Tap a person to see their resume, profile, and form. Change their status, send a test, or move them forward.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">👥 All applicants</span>
@@ -2529,7 +2493,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">👥</div>
                     <div class="screenshot-slot__filename">em_candidates.jpg</div>
-                    <div class="screenshot-slot__hint">Candidates list</div>
+                    <div class="screenshot-slot__hint">People list</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2542,16 +2506,13 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">6</div>
-                <div class="walkthrough-step-title">Create &amp; Run Assessments</div>
+                <div class="walkthrough-step-title">Make and send tests</div>
                 <div class="walkthrough-step-desc">
-                  The <strong>Assessments</strong> tab lets you build skill tests.
-                  Add timed multiple-choice or text questions.
-                  Assign an assessment to a candidate from their application screen.
-                  Candidates complete it inside the app. Results appear with scores and answers.
+                  Use <strong>Assessments</strong> to make skill tests. Add questions and a time limit. Send the test to a candidate. They do it in the app. You see their score and answers.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">💡</div>
-                  <div class="tip-box__text"><strong>Tip:</strong> Send assessments before interviews to filter serious applicants — saves time scheduling for unqualified candidates.</div>
+                  <div class="tip-box__text"><strong>Tip:</strong> Send tests before interviews. This helps you choose who to talk to first.</div>
                 </div>
               </div>
               <div>
@@ -2560,7 +2521,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">📝</div>
                     <div class="screenshot-slot__filename">em_assessments.jpg</div>
-                    <div class="screenshot-slot__hint">Assessments screen</div>
+                    <div class="screenshot-slot__hint">Tests screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2573,12 +2534,9 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">7</div>
-                <div class="walkthrough-step-title">Manage Subscriptions</div>
+                <div class="walkthrough-step-title">Manage plan and credits</div>
                 <div class="walkthrough-step-desc">
-                  Access <strong>Subscriptions</strong> from your Profile tab.
-                  View your current plan, remaining job posting credits, and billing history.
-                  Upgrade to post more jobs or get featured placement on the platform.
-                  All billing is managed securely in-app.
+                  Open <strong>Subscriptions</strong> from Profile. See your plan, job credits, and payment history. Upgrade if you need more job posts.
                 </div>
                 <div class="flex gap-sm" style="flex-wrap:wrap;margin-top:var(--space-md);">
                   <span class="chip chip--selected">💳 Plan management</span>
@@ -2593,7 +2551,7 @@
                   <div class="screenshot-slot__overlay">
                     <div class="screenshot-slot__icon">💳</div>
                     <div class="screenshot-slot__filename">em_subscriptions.jpg</div>
-                    <div class="screenshot-slot__hint">Subscriptions screen</div>
+                    <div class="screenshot-slot__hint">Plan screen</div>
                   </div>
                   <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom screenshot">🔍</button>
                 </div>
@@ -2606,19 +2564,17 @@
             <div class="walkthrough-layout">
               <div>
                 <div class="walkthrough-step-num">8</div>
-                <div class="walkthrough-step-title">Employer Profile &amp; Settings</div>
+                <div class="walkthrough-step-title">Employer profile and settings</div>
                 <div class="walkthrough-step-desc">
-                  Go to your <strong>Employer Profile</strong> to update company details, logo, website link, and bio.
-                  Open <strong>Settings</strong> to toggle notifications, configure biometric **App Lock** security, or request permanent **Account Deletion**.
-                  To switch views, note that role conversion isn't supported; you must log out and sign in with a Jobseeker account.
+                  Open <strong>Employer Profile</strong> to change company details, logo, website, and bio. Open <strong>Settings</strong> to change alerts, use <strong>App Lock</strong>, or delete the account. To use Jobseeker mode, log out and sign in with a Jobseeker account.
                 </div>
                 <div class="tip-box mt-lg">
                   <div class="tip-box__icon">🎉</div>
-                  <div class="tip-box__text"><strong>You're all set!</strong> You now have everything you need to attract great talent with JobsNext. Start by posting your first job.</div>
+                  <div class="tip-box__text"><strong>You are ready!</strong> You can now post jobs and find people to hire.</div>
                 </div>
                 <div class="mt-xl">
                   <button class="btn btn--filled" onclick="scrollToSection('checklist')">
-                    ✅ Go to Checklist
+                    ✅ Open checklist
                   </button>
                 </div>
               </div>
@@ -2650,8 +2606,8 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">📱 Screens Guide</div>
-          <h2 class="section-title">Every screen, explained</h2>
-          <p class="section-desc">Select a screen below to see the interactive annotations and what each element does.</p>
+          <h2 class="section-title">Learn each screen</h2>
+          <p class="section-desc">Choose a screen. Read the simple notes. Learn what each part does.</p>
         </div>
 
         <!-- Dynamic Tabs container: Rebuilt in JS based on role toggle -->
@@ -2664,31 +2620,31 @@
         <!-- JS: Guest Browse -->
         <div class="screen-panel" id="panel-js-browse-guest" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Guest Browse Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Browse without login</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              The landing pad when first launching the app. You can explore jobs immediately without an account.
+              This is the first screen. You can look at jobs without an account.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Search &amp; Filters</div><div class="annotation-desc">Type job titles, companies or skills. Voice search is supported. Filters are fully accessible.</div></div>
+                <div><div class="annotation-title">Search and filters</div><div class="annotation-desc">Type a job name, company, or skill. You can also use voice search.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Job Card List</div><div class="annotation-desc">Displays matching jobs with quick info: salary, location, and tags.</div></div>
+                <div><div class="annotation-title">Job cards</div><div class="annotation-desc">Each card shows a job, pay, place, and tags.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Guest Profile Tab / Bookmark Warning</div><div class="annotation-desc">Tapping Saved, Applied, or Profile prompts the Login/Signup screen.</div></div>
+                <div><div class="annotation-title">Login reminder</div><div class="annotation-desc">If you tap Saved, Applied, or Profile, the app asks you to log in.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap the search bar and input keyword terms (e.g. "Flutter", "Manager").</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap the microphone icon for hands-free search by voice.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap the filter icon to adjust sorting, salary range, and employment type.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Click any job card in the list to open its details.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap the search bar. Type words like "Flutter" or "Manager".</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap the microphone to search by voice.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap the filter icon to choose pay, job type, and more.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap a job card to read more.</li>
               </ul>
             </div>
           </div>
@@ -2708,32 +2664,32 @@
         <!-- JS: Auth & OTP -->
         <div class="screen-panel" id="panel-js-auth" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Jobseeker Auth &amp; OTP</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Jobseeker sign in and code</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Dedicated login screen for jobseekers, followed by the OTP verification screen.
+              Use this screen to sign in. Then type the code from your email.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Login Credentials</div><div class="annotation-desc">Enter email and password. Built-in validation checks formatting before submission.</div></div>
+                <div><div class="annotation-title">Email and password</div><div class="annotation-desc">Type your email and password. The app checks them before you go on.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">OTP Input Fields</div><div class="annotation-desc">Six separate digit fields. Automatically focuses the next field as you type.</div></div>
+                <div><div class="annotation-title">Code boxes</div><div class="annotation-desc">Type the 6 numbers from your email.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Resend Timer</div><div class="annotation-desc">Counts down from 60 seconds. Resend button is enabled once it hits 0.</div></div>
+                <div><div class="annotation-title">Send again timer</div><div class="annotation-desc">Wait for the timer. Then tap Resend Code if you need a new code.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> On the Auth screen, enter your registered email address and password.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap "Forgot Password?" below the password input if you need to recover access.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap "Log In" to submit. You'll be redirected to the OTP Verification screen.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Input the 6-digit OTP sent to your email. The fields auto-focus sequentially.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> If the timer runs out before you receive the code, click "Resend Code".</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Type your email and password.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap "Forgot Password?" if you forgot your password.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap "Log In".</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Type the 6-number code from your email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> If you do not get the code, tap "Resend Code".</li>
               </ul>
             </div>
           </div>
@@ -2753,41 +2709,41 @@
         <!-- JS: Create Account -->
         <div class="screen-panel" id="panel-js-register" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Jobseeker Registration</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Make a jobseeker account</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Dedicated registration screen for jobseekers to set up their profiles.
+              Use this screen to make your jobseeker account.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Registration Fields</div><div class="annotation-desc">Enter Full Name, Email, Password, and Confirmation. Password matches are validated locally.</div></div>
+                <div><div class="annotation-title">Your details</div><div class="annotation-desc">Type your name, email, and password.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Terms &amp; Agreements</div><div class="annotation-desc">A checkbox confirming you agree to the Terms of Service and Privacy Policy.</div></div>
+                <div><div class="annotation-title">Terms checkbox</div><div class="annotation-desc">Tick the box to agree to the rules and privacy policy.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Sign In Tab Switching</div><div class="annotation-desc">Allows switching back to the Login screen directly.</div></div>
+                <div><div class="annotation-title">Sign in tab</div><div class="annotation-desc">Tap this if you already have an account.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Select the "Create Account" tab at the top of the Auth screen.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Fill in your Full Name, Email address, and choose a secure Password.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Re-enter your password in the Password Confirmation field.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Toggle the agreement checkbox and tap "Register" to submit.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap "Create Account".</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Type your name, email, and password.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Type the password again.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tick the box. Tap "Register".</li>
               </ul>
             </div>
           </div>
           <div>
             <div class="screenshot-slot" id="ss-panel-js-register">
-              <img src="js_register.jpg" alt="Jobseeker registration screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
+              <img src="js_register.jpg" alt="Jobseeker account screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
               <div class="screenshot-slot__overlay">
                 <div class="screenshot-slot__icon">📝</div>
                 <div class="screenshot-slot__filename">js_register.jpg</div>
-                <div class="screenshot-slot__hint">Jobseeker Registration screen</div>
+                <div class="screenshot-slot__hint">Jobseeker account screen</div>
               </div>
               <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom">🔍</button>
             </div>
@@ -2797,32 +2753,32 @@
         <!-- JS: Complete Profile -->
         <div class="screen-panel" id="panel-js-complete-profile" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Profile Completion Wizard</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Finish your profile</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              The multi-step wizard shown right after registration. Helps you fill essential information step-by-step.
+              This screen helps you add your profile details one step at a time.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Wizard Steps Tracker</div><div class="annotation-desc">Shows steps: Personal details → Experience &amp; Education → Skills &amp; Resume.</div></div>
+                <div><div class="annotation-title">Step tracker</div><div class="annotation-desc">It shows where you are: details, work, school, skills, and resume.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Skills &amp; Resume Upload</div><div class="annotation-desc">Enter skills (tags) and upload your resume in PDF format. AI reads it for parsing.</div></div>
+                <div><div class="annotation-title">Skills and resume</div><div class="annotation-desc">Add your skills. Upload your resume as a PDF.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Skip Option</div><div class="annotation-desc">Allows skipping steps to finish later in the Profile tab.</div></div>
+                <div><div class="annotation-title">Skip</div><div class="annotation-desc">You can skip a step and finish it later in Profile.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> <strong>Personal Details</strong>: Enter your name, phone number, location, and a short bio. Tap Next.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> <strong>Experience &amp; Education</strong>: Add current/past jobs and educational qualifications. Tap Next.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> <strong>Skills</strong>: Type skills one by one and select from suggestions. Add at least 5 for best AI matches.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> <strong>Resume Upload</strong>: Tap the upload area to select a PDF from your device. AI parses it automatically.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Finish</strong> to save. You can revisit and edit any step from your Profile tab at any time.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Add your name, phone, place, and a short bio. Tap Next.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Add your jobs and school. Tap Next.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Add your skills. Try to add at least 5.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap upload and choose your resume PDF.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Finish</strong> to save.</li>
               </ul>
             </div>
           </div>
@@ -2842,32 +2798,32 @@
         <!-- JS: Home -->
         <div class="screen-panel" id="panel-js-home" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Home Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Home screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Your main landing screen when logged in. Displays recommendations, search, and career resource shortcuts.
+              This is your main screen after login. It shows search, jobs for you, and helpful links.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Search Bar</div><div class="annotation-desc">Provides instant search entry, transitioning directly to the Browse tab.</div></div>
+                <div><div class="annotation-title">Search bar</div><div class="annotation-desc">Tap here to search for jobs.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Recommended Carousel</div><div class="annotation-desc">Horizontally scrollable list of jobs matched specifically to your profile.</div></div>
+                <div><div class="annotation-title">Jobs for you</div><div class="annotation-desc">Swipe to see jobs that may fit your profile.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Explore Cards</div><div class="annotation-desc">Quick links to Companies directory and Career Resources (CPD).</div></div>
+                <div><div class="annotation-title">Explore cards</div><div class="annotation-desc">Tap these to open Companies or Career help.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap the search bar at the top to jump straight to Browse and search by keyword.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Scroll the <strong>Recommended Carousel</strong> left/right to browse AI-matched jobs — tap any card to open its details.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Companies</strong> to browse employer profiles and see all their active listings.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap <strong>Career Resources</strong> to access CPD trackers, interview prep guides, and learning paths.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Use the bottom navigation bar to switch between Home, Browse, Saved, Applied, and Profile tabs.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap the search bar to look for jobs.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Swipe the job cards. Tap a card to read more.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Companies</strong> to see company pages.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap <strong>Career help</strong> for learning and interview help.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Use the bottom bar to open Home, Browse, Saved, Applied, or Profile.</li>
               </ul>
             </div>
           </div>
@@ -2887,32 +2843,32 @@
         <!-- JS: Job Detail -->
         <div class="screen-panel" id="panel-js-job-detail" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Job Detail Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Job detail screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Full specification of a job listing, including salary, location, description, and key skills.
+              This screen shows the full job details, like pay, place, job text, and skills.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">AI Match Score Badge</div><div class="annotation-desc">Displays your match percentage. Tap to see gaps in skills or experience.</div></div>
+                <div><div class="annotation-title">AI match score</div><div class="annotation-desc">This shows how well the job fits you. Tap it to learn more.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Company Info &amp; Link</div><div class="annotation-desc">Shows employer name, details, and lets you view other jobs they've posted.</div></div>
+                <div><div class="annotation-title">Company info</div><div class="annotation-desc">See the company name and open other jobs from that company.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Action Buttons</div><div class="annotation-desc">Sticky bar containing Bookmark toggle and Apply Now.</div></div>
+                <div><div class="annotation-title">Action buttons</div><div class="annotation-desc">Use these buttons to save the job or apply now.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap any job card from Browse or Saved tabs to open the detail screen.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Check the coloured <strong>AI Match Score</strong> badge at the top — tap it to see which profile areas raised or lowered your score.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Scroll down to read the full job description, requirements, salary range, and close date.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap the <strong>bookmark icon</strong> in the sticky footer to save the job to your Saved tab.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Apply Now</strong> when ready — you'll be taken to the application form.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap a job card from Browse or Saved.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Look at the <strong>AI Match Score</strong>. Tap it to see why you got that score.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Scroll down to read the job, pay, needs, and close date.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap the bookmark icon to save the job.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Apply Now</strong> to apply.</li>
               </ul>
             </div>
           </div>
@@ -2932,32 +2888,32 @@
         <!-- JS: Apply -->
         <div class="screen-panel" id="panel-js-apply" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Apply Job Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Apply screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              The submission screen where you bundle your profile, select or upload a resume, and write/generate a cover letter.
+              Use this screen to send your resume, cover letter, and answers.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Resume Selection</div><div class="annotation-desc">Select your primary uploaded resume or upload a new PDF document.</div></div>
+                <div><div class="annotation-title">Resume</div><div class="annotation-desc">Choose your saved resume or upload a new PDF.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Jone AI Cover Letter</div><div class="annotation-desc">Write cover letter manually, or click to draft one with AI based on job specs.</div></div>
+                <div><div class="annotation-title">Cover letter</div><div class="annotation-desc">Write a letter, or ask Jone AI to help you start one.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Screening Questions</div><div class="annotation-desc">Fill required questions added by the employer (e.g. notice period, expected salary).</div></div>
+                <div><div class="annotation-title">Questions</div><div class="annotation-desc">Answer the questions from the employer.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Select your resume from the dropdown, or tap <strong>Upload New</strong> to attach a different PDF.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> In the Cover Letter field, type your message — or tap <strong>Generate with Jone AI</strong> for an AI-drafted letter tailored to the job.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Edit the AI draft to personalise it with your specific details and tone.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Scroll down and answer all Screening Questions marked as required.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Submit Application</strong>. A confirmation banner will appear on success.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Choose your resume, or tap <strong>Upload New</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Type your cover letter, or tap <strong>Generate with Jone AI</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Read and edit the letter.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Answer all required questions.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Submit Application</strong>.</li>
               </ul>
             </div>
           </div>
@@ -2977,31 +2933,31 @@
         <!-- JS: Applied / Tracking -->
         <div class="screen-panel" id="panel-js-applied" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Applied &amp; Status Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Applied and status screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Keeps track of all active applications and details the exact recruitment timeline.
+              This screen shows all jobs you applied for and what happened next.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Application Timeline</div><div class="annotation-desc">A vertical timeline tracking Submitted, Under Review, Assessment, Interview, etc.</div></div>
+                <div><div class="annotation-title">Timeline</div><div class="annotation-desc">See steps like Sent, Checking, Test, Interview, and Done.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Assessment Prompt</div><div class="annotation-desc">If an assessment is requested, it highlights the due date and adds a Start button.</div></div>
+                <div><div class="annotation-title">Test reminder</div><div class="annotation-desc">If you need to do a test, you will see a Start button and a date.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Chat with Recruiter</div><div class="annotation-desc">Opens direct channel or queries Jone AI regarding the recruitment status.</div></div>
+                <div><div class="annotation-title">Chat</div><div class="annotation-desc">Use chat or Jone AI to ask about your application.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap the <strong>Applied</strong> tab in the bottom navigation to see all your submitted applications.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap any application card to see its full recruitment <strong>Timeline</strong>: Submitted → Under Review → Assessment → Interview → Accepted/Rejected.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> If an <strong>Assessment Due</strong> banner appears, tap <strong>Start Assessment</strong> to complete it before the deadline.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap the chat bubble icon to ask Jone AI about your application's current stage.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Applied</strong> to see jobs you sent.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap an application card to see the timeline.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> If you see <strong>Assessment Due</strong>, tap <strong>Start Assessment</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap chat to ask Jone AI about your application.</li>
               </ul>
             </div>
           </div>
@@ -3021,47 +2977,47 @@
         <!-- JS: Settings -->
         <div class="screen-panel" id="panel-js-settings" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Jobseeker Settings</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Jobseeker settings</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Manage account privacy, biometric security, and notification preferences.
+              Use this screen to keep your account safe and choose alerts.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">App Lock (Biometrics)</div><div class="annotation-desc">Toggle Face ID / fingerprint / PIN security with a custom time-delay option.</div></div>
+                <div><div class="annotation-title">App lock</div><div class="annotation-desc">Turn on Face ID, finger scan, or PIN lock.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Notification Channels</div><div class="annotation-desc">Choose which push alerts to receive: job matches, status updates, recommendations.</div></div>
+                <div><div class="annotation-title">Alerts</div><div class="annotation-desc">Choose which phone alerts you want.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Account Actions</div><div class="annotation-desc">Log out or initiate permanent account deletion from the Account section.</div></div>
+                <div><div class="annotation-title">Account actions</div><div class="annotation-desc">Log out or delete your account.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">🔒 Set Up App Lock</div>
+              <div class="how-to-use__title">🔒 Turn on app lock</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Go to <strong>Profile tab → Settings</strong> (cog icon).</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Find the <strong>App Lock</strong> section and toggle it <em>on</em>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Select authentication type: <strong>Face ID</strong>, <strong>Fingerprint</strong>, or <strong>PIN</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Choose a lock delay: Immediately, 1 min, 5 mins, or 30 mins after backgrounding the app.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> From now on, the app will require biometric or PIN confirmation each time it is reopened.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Go to <strong>Profile → Settings</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Find <strong>App Lock</strong> and turn it on.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Choose <strong>Face ID</strong>, <strong>Fingerprint</strong>, or <strong>PIN</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Choose when the app should lock.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Now the app asks for Face ID, finger scan, or PIN when needed.</li>
               </ul>
             </div>
             <div class="how-to-use" style="margin-top:var(--space-md);">
               <div class="how-to-use__title">🗑️ Delete Account</div>
               <ul class="how-to-use__steps">
                 <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Go to <strong>Profile → Settings → Account</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap <strong>Delete Account</strong> and confirm via the email code sent to your inbox.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Your data is permanently removed per our <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap <strong>Delete Account</strong>. Type the code sent to your email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Your data is removed. Read the <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>.</li>
               </ul>
             </div>
             <div class="how-to-use" style="margin-top:var(--space-md);">
-              <div class="how-to-use__title">🔄 Switch to Employer Mode</div>
+              <div class="how-to-use__title">🔄 Use employer mode</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">⚠️</span> <strong>Account conversion is not supported.</strong> Jobseeker and Employer are separate account types.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">✔️</span> To use the app as an Employer, log out and <strong>sign up with a different email address</strong> choosing the Employer role.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">⚠️</span> You cannot change a Jobseeker account into an Employer account.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">✔️</span> Log out. Make a new Employer account with a different email.</li>
               </ul>
             </div>
           </div>
@@ -3084,42 +3040,42 @@
         <!-- EM: Auth -->
         <div class="screen-panel" id="panel-em-auth" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer Auth &amp; Verify</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer sign in and check</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Dedicated employer authentication screen with primary orange color layout.
+              Use this screen to make or open an employer account.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Company Signup Info</div><div class="annotation-desc">Requires company name, authorized registration number, and corporate email address.</div></div>
+                <div><div class="annotation-title">Company details</div><div class="annotation-desc">Type the company name, number, and company email.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Verification Code</div><div class="annotation-desc">Email-based verification link screen to activate job posting functionality.</div></div>
+                <div><div class="annotation-title">Email check</div><div class="annotation-desc">Use the email link or code to turn on job posting.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ Register as Employer</div>
+              <div class="how-to-use__title">⚡ Make an employer account</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> On the welcome screen tap <strong>I'm an Employer</strong> then tap <strong>Create Account</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Enter your <strong>Company Name</strong>, <strong>Registration Number</strong>, and your <strong>corporate email</strong> address.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Create a secure password and tap <strong>Register</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> A 6-digit OTP is sent to your corporate email — enter it on the verification screen.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> On success you'll be taken to complete your company profile before accessing the dashboard.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>I'm an Employer</strong>. Then tap <strong>Create Account</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Type your company name, number, and company email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Make a password. Tap <strong>Register</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Type the 6-number code from your email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Fill in your company profile.</li>
               </ul>
             </div>
             <div class="how-to-use" style="margin-top:var(--space-md);">
-              <div class="how-to-use__title">🔐 Login as Employer</div>
+              <div class="how-to-use__title">🔐 Sign in as employer</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Select <strong>I'm an Employer</strong> on the welcome screen then tap <strong>Login</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Enter your registered corporate email and password, then tap <strong>Sign In</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Forgot password?</strong> to receive a password reset link via email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>I'm an Employer</strong>. Then tap <strong>Login</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Type your company email and password. Tap <strong>Sign In</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Forgot password?</strong> if you need a new password link.</li>
               </ul>
             </div>
           </div>
           <div>
             <div class="screenshot-slot" id="ss-panel-em-auth">
-              <img src="em_auth.jpg" alt="Employer auth screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
+              <img src="em_auth.jpg" alt="Employer sign in screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
               <div class="screenshot-slot__overlay">
                 <div class="screenshot-slot__icon">🔐</div>
                 <div class="screenshot-slot__filename">em_auth.jpg</div>
@@ -3133,37 +3089,37 @@
         <!-- EM: Email Verification -->
         <div class="screen-panel" id="panel-em-email-verify" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Email Verification Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Email check screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Verify corporate email structure to satisfy trust guidelines and unlock platform features.
+              Check your company email so you can use employer tools.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Sent Notice</div><div class="annotation-desc">Indicates the corporate email address where the verification code has been dispatched.</div></div>
+                <div><div class="annotation-title">Email sent</div><div class="annotation-desc">This tells you which email got the code.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Confirm Button</div><div class="annotation-desc">Checks current code state and redirects directly to dashboard upon successful matching.</div></div>
+                <div><div class="annotation-title">Confirm button</div><div class="annotation-desc">Tap this after you type the code.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> After registering, check your corporate email inbox for the verification email from JobsNext.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Copy the 6-digit code from the email and enter it in the boxes on screen.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Confirm</strong> — you'll be redirected to the dashboard on success.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Didn't receive the email? Tap <strong>Resend Code</strong> (available after 60 seconds). Also check your spam/junk folder.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Open your company email.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Copy the 6-number code.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Type the code in the app. Tap <strong>Confirm</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> If there is no email, tap <strong>Resend Code</strong>. Check spam too.</li>
               </ul>
             </div>
           </div>
           <div>
             <div class="screenshot-slot" id="ss-panel-em-email-verify">
-              <img src="em_email_verify.jpg" alt="Employer email verification" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
+              <img src="em_email_verify.jpg" alt="Employer email code screen" onerror="this.parentElement.querySelector('.screenshot-slot__overlay').style.display='flex';this.style.display='none';">
               <div class="screenshot-slot__overlay">
                 <div class="screenshot-slot__icon">📧</div>
                 <div class="screenshot-slot__filename">em_email_verify.jpg</div>
-                <div class="screenshot-slot__hint">Employer Verification Screen</div>
+                <div class="screenshot-slot__hint">Employer email check screen</div>
               </div>
               <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom">🔍</button>
             </div>
@@ -3173,31 +3129,31 @@
         <!-- EM: Dashboard -->
         <div class="screen-panel" id="panel-em-dashboard" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer Dashboard</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer home</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Central interface for recruiters to track applicant count, active roles, and remaining job credits.
+              This screen shows your jobs, people who applied, and job credits.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Recruitment Metrics</div><div class="annotation-desc">Count of total views, direct clicks, applications, and current assessments pending.</div></div>
+                <div><div class="annotation-title">Numbers</div><div class="annotation-desc">See views, clicks, applications, and tests.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Quick Action Hub</div><div class="annotation-desc">One-tap navigation buttons to Post Job, View Candidates, or Setup Assessments.</div></div>
+                <div><div class="annotation-title">Quick buttons</div><div class="annotation-desc">Tap to post a job, see people, or make tests.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Active Listings</div><div class="annotation-desc">Mini display of your recent job posts. Tap to see detailed candidate listings.</div></div>
+                <div><div class="annotation-title">Active jobs</div><div class="annotation-desc">See your recent job posts. Tap one to see people who applied.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> The <strong>Metrics Bar</strong> at the top shows live counts: Views, Clicks, Applications, and Pending Assessments.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Use the <strong>Quick Action Hub</strong> to tap <em>Post Job</em> to create a new listing immediately.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap any active listing card to drill into that job's candidate list and application statuses.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap <em>View All</em> next to Active Listings to see all your current and past job postings.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Look at the numbers at the top.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap <em>Post Job</em> to make a job post.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap a job card to see people who applied.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap <em>View All</em> to see all jobs.</li>
               </ul>
             </div>
           </div>
@@ -3207,7 +3163,7 @@
               <div class="screenshot-slot__overlay">
                 <div class="screenshot-slot__icon">🏢</div>
                 <div class="screenshot-slot__filename">em_dashboard.jpg</div>
-                <div class="screenshot-slot__hint">Employer Dashboard Screen</div>
+                <div class="screenshot-slot__hint">Employer home Screen</div>
               </div>
               <button class="screenshot-slot__zoom" onclick="openLightbox(this.parentElement.querySelector('img'))" aria-label="Zoom">🔍</button>
             </div>
@@ -3217,33 +3173,33 @@
         <!-- EM: Post Job -->
         <div class="screen-panel" id="panel-em-post-job" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Post a Job Screen</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Post a job screen</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Standardised job posting form. Integrates Jone AI to draft descriptions based on minor inputs.
+              Use this form to write and post a job. Jone AI can help write it.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Basic Info Section</div><div class="annotation-desc">Role title, location (remote/hybrid/on-site), experience target, and job category chips.</div></div>
+                <div><div class="annotation-title">Basic info</div><div class="annotation-desc">Add the job title, place, experience, and job type.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Jone AI Description Writer</div><div class="annotation-desc">Auto-generates clean structured description paragraphs with key requirements.</div></div>
+                <div><div class="annotation-title">Jone AI writer</div><div class="annotation-desc">Jone AI can help write the job details.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Custom Screening Setup</div><div class="annotation-desc">Add up to 5 simple text or yes/no questions for applicants to fill on application.</div></div>
+                <div><div class="annotation-title">Questions</div><div class="annotation-desc">Add simple questions for people to answer.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> From the Dashboard tap <strong>Post a Job</strong> or tap the <em>+</em> FAB on the Jobs tab.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Fill in <strong>Basic Info</strong>: job title, location type, experience level, and category.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> In the Description field, type a brief summary and tap <strong>Generate with Jone AI</strong> to expand it into a full job description.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Edit the AI draft as needed — add salary range, benefits, and specific requirements.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Scroll to <strong>Screening Questions</strong> and add up to 5 custom questions for applicants.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">6.</span> Tap <strong>Publish</strong> — the job goes live instantly and uses 1 job credit from your balance.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Post a job</strong> or the <em>+</em> button.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Add the job title, place, level, and type.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Write a short note. Tap <strong>Generate with Jone AI</strong> if you want help.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Read and edit the job text.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Add questions for applicants if you need them.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">6.</span> Tap <strong>Publish</strong>. This uses 1 job credit.</li>
               </ul>
             </div>
           </div>
@@ -3263,32 +3219,32 @@
         <!-- EM: Candidates -->
         <div class="screen-panel" id="panel-em-candidates" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Candidates List</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">People who applied</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Sort and view applicants by date or AI match score. Shows quick overview info of each applicant.
+              See people who applied. Sort them by date or match score.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">AI Match Score Sorting</div><div class="annotation-desc">Orders candidates descending by match score, making top profiles instant to find.</div></div>
+                <div><div class="annotation-title">Sort by match</div><div class="annotation-desc">Put the best matches at the top.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Candidate Details Card</div><div class="annotation-desc">Displays name, primary role, match score, resume tag, and active application state.</div></div>
+                <div><div class="annotation-title">Person card</div><div class="annotation-desc">See the person's name, match score, resume, and status.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">3</div>
-                <div><div class="annotation-title">Filter by State</div><div class="annotation-desc">Narrow applicants down: Submitted, Under Review, Shortlisted, Rejected.</div></div>
+                <div><div class="annotation-title">Filter</div><div class="annotation-desc">Show only Sent, Checking, Shortlisted, or Rejected.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap a job listing from your Dashboard or Jobs tab to open its <strong>Candidates List</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Use the <strong>Sort</strong> dropdown to order by AI Match Score (highest first) or by Date Applied.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Use the <strong>Filter</strong> chips to show only: Submitted, Under Review, Shortlisted, or Rejected.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap a candidate card to open their full profile, view their resume, and read their cover letter.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> In the candidate detail view, tap <strong>Move Stage</strong> to advance or reject the application. Tap <strong>Message</strong> to open a direct chat.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap a job from Dashboard or Jobs.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Use <strong>Sort</strong> to order by match score or date.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Use <strong>Filter</strong> to show only the status you want.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Tap a person to see their profile, resume, and cover letter.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Move Stage</strong> to move them forward or reject them. Tap <strong>Message</strong> to chat.</li>
               </ul>
             </div>
           </div>
@@ -3308,28 +3264,28 @@
         <!-- EM: Assessments -->
         <div class="screen-panel" id="panel-em-assessments" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer Assessments</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer tests</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Create, review, and evaluate skill-based tests. Shows candidate performance scores.
+              Make tests, send them, and see scores.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Create Assessment FAB</div><div class="annotation-desc">Add a new test, configuring duration (in minutes) and custom test questions.</div></div>
+                <div><div class="annotation-title">Create button</div><div class="annotation-desc">Add a new test with a time limit and questions.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Active Assessments List</div><div class="annotation-desc">Shows all active tests, applicant count assigned, and completion rates.</div></div>
+                <div><div class="annotation-title">Test list</div><div class="annotation-desc">See your tests, who got them, and who finished them.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Assessments</strong> from the bottom nav or Dashboard quick action.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap the <strong>+ Create</strong> button. Enter a title, set the time limit (minutes), and add questions (multiple choice or short answer).</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Save Assessment</strong> to publish it. It will appear in your assessments list.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> To assign an assessment to an applicant, open the candidate detail screen and tap <strong>Send Assessment</strong>.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Once the candidate submits, tap the assessment card to view their score and individual answers.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Assessments</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Tap <strong>+ Create</strong>. Add a title, time limit, and questions.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Save Assessment</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Open a person. Tap <strong>Send Assessment</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> When they finish, tap the test to see their score and answers.</li>
               </ul>
             </div>
           </div>
@@ -3349,28 +3305,28 @@
         <!-- EM: Subscriptions -->
         <div class="screen-panel" id="panel-em-subscriptions" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Subscriptions &amp; Billing</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Plans and payments</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Buy job credits, view transaction details, or upgrade current subscription tiers.
+              Buy job credits, see payments, or change your plan.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Plan Tiers</div><div class="annotation-desc">Select Standard, Pro, or Enterprise. Details cost, maximum credits, and search tools.</div></div>
+                <div><div class="annotation-title">Plans</div><div class="annotation-desc">Choose Standard, Pro, or Enterprise.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Active Balance</div><div class="annotation-desc">Remaining job post credits shown at the top. Refreshes instantly on payment.</div></div>
+                <div><div class="annotation-title">Credits left</div><div class="annotation-desc">See how many job posts you can still use.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Subscriptions</strong> from the side menu or Profile tab to view your current plan and credit balance.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Review the <strong>Plan Tiers</strong>: Standard (basic), Pro (advanced analytics + candidate search), Enterprise (unlimited).</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Upgrade</strong> on your chosen plan to proceed to checkout via the in-app payment gateway.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> After payment, credits are added to your balance instantly. Each job post deducts 1 credit.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Transaction History</strong> to view past purchases and download invoices.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Tap <strong>Subscriptions</strong> from Profile.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Look at your plan and credits.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Tap <strong>Upgrade</strong> if you want a new plan.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> After payment, credits are added. Each job post uses 1 credit.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Transaction History</strong> to see past payments.</li>
               </ul>
             </div>
           </div>
@@ -3390,28 +3346,28 @@
         <!-- EM: Settings -->
         <div class="screen-panel" id="panel-em-settings" role="tabpanel">
           <div>
-            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer Settings</h3>
+            <h3 class="text-title-md" style="margin-bottom:var(--space-lg);">Employer settings</h3>
             <p class="text-body-md color-variant" style="margin-bottom:var(--space-xl);">
-              Manage company profile, workspace notification parameters, and login security options.
+              Change company details, alerts, and account safety.
             </p>
             <ul class="screen-annotations">
               <li class="screen-annotation">
                 <div class="annotation-num">1</div>
-                <div><div class="annotation-title">Company Brand Settings</div><div class="annotation-desc">Upload brand icon, tagline, description, and link to corporate website.</div></div>
+                <div><div class="annotation-title">Company brand</div><div class="annotation-desc">Add your logo, short line, company text, and website.</div></div>
               </li>
               <li class="screen-annotation">
                 <div class="annotation-num">2</div>
-                <div><div class="annotation-title">Workspace Notification Rules</div><div class="annotation-desc">Toggle push/email alerts when candidates apply, submit assessments, or message.</div></div>
+                <div><div class="annotation-title">Alerts</div><div class="annotation-desc">Turn alerts on or off for applications, tests, and messages.</div></div>
               </li>
             </ul>
             <div class="how-to-use">
-              <div class="how-to-use__title">⚡ How to Use</div>
+              <div class="how-to-use__title">⚡ How to use</div>
               <ul class="how-to-use__steps">
-                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Go to <strong>Profile → Settings</strong> to access all employer configuration options.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> In <strong>Company Branding</strong>, upload your company logo, add a tagline, and enter your corporate website URL.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Under <strong>Notifications</strong>, toggle alerts for: new applications, assessment completions, and direct messages from candidates.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Use <strong>Account Security</strong> to change your password or enable App Lock with biometrics.</li>
-                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> Tap <strong>Delete Account</strong> under the Account section and confirm via email to permanently close your employer account per the <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">1.</span> Go to <strong>Profile → Settings</strong>.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">2.</span> Add your company logo, short line, and website.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">3.</span> Choose which alerts you want.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">4.</span> Change your password or turn on App Lock.</li>
+                <li class="how-to-use__step"><span class="how-to-use__step-num">5.</span> To delete the account, tap <strong>Delete Account</strong> and follow the email code step. Read the <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>.</li>
               </ul>
             </div>
           </div>
@@ -3440,8 +3396,8 @@
       <div class="container--narrow">
         <div class="section-header">
           <div class="section-badge">❓ FAQ</div>
-          <h2 class="section-title">Frequently asked questions</h2>
-          <p class="section-desc">Can't find your answer? Contact support from the app's Help section.</p>
+          <h2 class="section-title">Questions and answers</h2>
+          <p class="section-desc">Need more help? Open Help in the app.</p>
         </div>
 
         <!-- Search -->
@@ -3463,7 +3419,7 @@
               Do I need an account to browse jobs?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">No — you can browse and search all jobs without creating an account. You only need to sign in when you want to save a job or submit an application.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">No. You can look at jobs without an account. Sign in only when you want to save a job or apply.</div></div>
           </div>
 
           <!-- Q2 -->
@@ -3472,7 +3428,7 @@
               How does the AI match score work?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">Jone (our AI) compares your profile — skills, experience, education, and job preferences — against each job's requirements. The percentage reflects how closely you match. A 100% profile gives the most accurate scores. Scores update automatically as you update your profile.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">Jone AI reads your profile and the job. It gives you a score. A full profile helps Jone AI give a better score.</div></div>
           </div>
 
           <!-- Q3 -->
@@ -3481,7 +3437,7 @@
               Can I apply to multiple jobs at once?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">Yes. You can apply to as many jobs as you like. Each application is independent. Use the Saved tab to shortlist roles you want to apply to in bulk, then go through them one by one — your saved profile data auto-fills each application.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">Yes. You can apply to many jobs. Save jobs first. Then open Saved and apply to them one by one.</div></div>
           </div>
 
           <!-- Q4 -->
@@ -3490,7 +3446,7 @@
               How do I reset my password?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">On the login screen, tap <strong>Forgot password?</strong> below the password field. Enter your registered email address and tap Send. You'll receive a reset link within a few minutes. If you don't see it, check your spam folder.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">On the login screen, tap <strong>Forgot password?</strong>. Type your email. Tap Send. Check your email. If you do not see it, check spam.</div></div>
           </div>
 
           <!-- Q5 -->
@@ -3499,7 +3455,7 @@
               What is App Lock and how do I enable it?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">App Lock adds an extra layer of privacy using your device's biometrics (Face ID, fingerprint) or PIN. Go to <strong>Profile → Settings → App Lock</strong> and toggle it on. You can also choose a delay: lock immediately, after 1 minute, 5 minutes, etc.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">App Lock keeps the app safe. It can use Face ID, finger scan, or PIN. Go to <strong>Profile → Settings → App Lock</strong> and turn it on.</div></div>
           </div>
 
           <!-- Q6 -->
@@ -3508,7 +3464,7 @@
               How do push notifications work?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">JobsNext sends push notifications for: new jobs matching your saved search, application status changes, assessment invitations, and employer messages. You can manage which notifications you receive from <strong>Settings → Notifications</strong>.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">JobsNext can send phone alerts for new jobs, application updates, tests, and messages. Change alerts in <strong>Settings → Notifications</strong>.</div></div>
           </div>
 
           <!-- Q7 -->
@@ -3517,7 +3473,7 @@
               How do employers post a job?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">After logging in as an employer, tap the ＋ button on the dashboard or Job Postings screen. Fill in the job details (title, description, requirements, salary, location, close date), preview your listing, and publish. Job credits are consumed per posting depending on your subscription plan.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">Sign in as an employer. Tap the + button. Add the job details. Check it. Tap Publish. One job post uses job credits.</div></div>
           </div>
 
           <!-- Q8 -->
@@ -3526,7 +3482,7 @@
               What are assessments?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">Assessments are employer-created skill tests that candidates complete inside the app. Employers build them from the Assessments section. Candidates receive an "Assessment Due" notification and must complete it within the deadline. Results are scored and displayed to the employer in the Candidates view.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">Assessments are skill tests. Employers make them. Jobseekers do them in the app. Employers see the score and answers.</div></div>
           </div>
 
           <!-- Q9 -->
@@ -3535,7 +3491,7 @@
               Can I switch between Jobseeker and Employer modes?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">No — Jobseeker and Employer are separate account types with separate logins. If you need both, create two accounts with different email addresses. The app's interface (colour theme) switches automatically based on your account role.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">No. Jobseeker and Employer are different account types. Use a different email for each account.</div></div>
           </div>
 
           <!-- Q10 -->
@@ -3544,12 +3500,12 @@
               How do I delete my account?
               <span class="faq-chevron" aria-hidden="true">▾</span>
             </div>
-            <div class="faq-a" role="region"><div class="faq-a-inner">Go to <strong>Profile → Settings → Account → Delete Account</strong>. You'll be asked to confirm via email. Account deletion is permanent and removes all your profile data, saved jobs, and application history. You can view the full <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>, read our <a href="https://jobsnext.com.au/privacy-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Privacy Policy</a>, and review the <a href="https://jobsnext.com.au/terms-conditions/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Terms & Conditions</a>.</div></div>
+            <div class="faq-a" role="region"><div class="faq-a-inner">Go to <strong>Profile → Settings → Account → Delete Account</strong>. Confirm with the email code. This removes your profile, saved jobs, and applications. Read the <a href="https://jobsnext.com.au/account-deletion-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Account Deletion Policy</a>, <a href="https://jobsnext.com.au/privacy-policy/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Privacy Policy</a>, and <a href="https://jobsnext.com.au/terms-conditions/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);text-decoration:underline;">Terms & Conditions</a>.</div></div>
           </div>
         </div>
 
         <p id="faq-no-results" style="display:none;color:var(--color-on-surface-variant);font-size:.875rem;text-align:center;padding:var(--space-xl);">
-          No questions match your search. Try different keywords.
+          No questions found. Try other words.
         </p>
       </div>
     </section>
@@ -3561,73 +3517,73 @@
       <div class="container">
         <div class="section-header">
           <div class="section-badge">💡 Tips &amp; Best Practices</div>
-          <h2 class="section-title">Get the most out of JobsNext</h2>
-          <p class="section-desc">Pro tips, common mistakes to avoid, and recommended workflows.</p>
+          <h2 class="section-title">Helpful tips</h2>
+          <p class="section-desc">Simple tips to help you use JobsNext well.</p>
         </div>
 
         <div class="tips-grid">
 
           <!-- Productivity tips -->
           <div class="tip-card">
-            <span class="tip-card__tag tag--productivity">✅ Productivity</span>
-            <div class="tip-card__title">Complete your profile first</div>
-            <div class="tip-card__desc">Before applying to a single job, spend 10 minutes completing your profile. A 100% profile gives you accurate AI match scores and makes your application stand out.</div>
+            <span class="tip-card__tag tag--productivity">✅ Do</span>
+            <div class="tip-card__title">Finish your profile first</div>
+            <div class="tip-card__desc">Fill in your profile before you apply. A full profile helps Jone AI find better jobs for you.</div>
           </div>
 
           <div class="tip-card">
-            <span class="tip-card__tag tag--productivity">✅ Productivity</span>
+            <span class="tip-card__tag tag--productivity">✅ Do</span>
             <div class="tip-card__title">Use voice search on Browse</div>
-            <div class="tip-card__desc">Tap the microphone icon on the Browse screen to search hands-free. Great for specific job titles or long search terms — faster than typing.</div>
+            <div class="tip-card__desc">Tap the microphone on Browse. Say the job you want. This can be faster than typing.</div>
           </div>
 
           <div class="tip-card">
-            <span class="tip-card__tag tag--productivity">✅ Productivity</span>
-            <div class="tip-card__title">Save first, apply strategically</div>
-            <div class="tip-card__desc">Bookmark everything that interests you during one session. Then review your Saved tab and apply to the top 5–10 that best match your profile. Quality over quantity.</div>
+            <span class="tip-card__tag tag--productivity">✅ Do</span>
+            <div class="tip-card__title">Save first, apply later</div>
+            <div class="tip-card__desc">Save jobs you like. Later, open Saved and apply to the best jobs first.</div>
           </div>
 
           <div class="tip-card">
-            <span class="tip-card__tag tag--productivity">✅ Productivity</span>
-            <div class="tip-card__title">Enable push notifications</div>
-            <div class="tip-card__desc">Turn on notifications for new job alerts so you can be among the first to apply. Many employers close roles within 24–48 hours of posting when they receive enough strong applications.</div>
+            <span class="tip-card__tag tag--productivity">✅ Do</span>
+            <div class="tip-card__title">Turn on phone alerts</div>
+            <div class="tip-card__desc">Turn on alerts. You can see new jobs and updates quickly.</div>
           </div>
 
           <!-- Common mistakes -->
           <div class="tip-card">
             <span class="tip-card__tag tag--mistake">⚠️ Avoid</span>
-            <div class="tip-card__title">Don't apply with an empty profile</div>
-            <div class="tip-card__desc">Applying without a completed profile means employers see very little about you, and your AI match score will be low. Employers often sort candidates by match score first.</div>
+            <div class="tip-card__title">Do not apply with an empty profile</div>
+            <div class="tip-card__desc">If your profile is empty, employers see very little about you. Fill it in first.</div>
           </div>
 
           <div class="tip-card">
             <span class="tip-card__tag tag--mistake">⚠️ Avoid</span>
-            <div class="tip-card__title">Don't ignore assessment deadlines</div>
-            <div class="tip-card__desc">When an employer requests an assessment, it appears as "Assessment Due" on your Applied tab. Missing the deadline often disqualifies your application automatically. Set a reminder.</div>
+            <div class="tip-card__title">Do not miss test dates</div>
+            <div class="tip-card__desc">If you see "Assessment Due", do the test before the date. Set a reminder.</div>
           </div>
 
           <div class="tip-card">
             <span class="tip-card__tag tag--mistake">⚠️ Avoid</span>
-            <div class="tip-card__title">Don't use generic cover letters</div>
-            <div class="tip-card__desc">If a role requires a cover letter, personalise it. Use Jone AI to draft a starting point, then edit it to include specifics about why you want this role at this company.</div>
+            <div class="tip-card__title">Make each cover letter fit the job</div>
+            <div class="tip-card__desc">Use Jone AI to start a letter. Then edit it so it talks about this job and this company.</div>
           </div>
 
           <!-- Recommended workflows -->
           <div class="tip-card">
-            <span class="tip-card__tag tag--workflow">🔄 Workflow</span>
-            <div class="tip-card__title">Recommended daily routine</div>
-            <div class="tip-card__desc">Morning: check notifications for status updates. Browse for 10 minutes and save new jobs. Evening: review saved jobs and apply to the best matches. Track on Applied tab.</div>
+            <span class="tip-card__tag tag--workflow">🔄 Plan</span>
+            <div class="tip-card__title">Easy daily plan</div>
+            <div class="tip-card__desc">Morning: check alerts. Look for jobs. Save good jobs. Evening: apply to the best saved jobs. Check Applied.</div>
           </div>
 
           <div class="tip-card">
-            <span class="tip-card__tag tag--workflow">🔄 Workflow</span>
-            <div class="tip-card__title">For employers: use assessments early</div>
-            <div class="tip-card__desc">Send assessments to promising candidates before scheduling interviews. This filters serious applicants and saves interview time. Create reusable assessment templates for recurring roles.</div>
+            <span class="tip-card__tag tag--workflow">🔄 Plan</span>
+            <div class="tip-card__title">Employers: send tests early</div>
+            <div class="tip-card__desc">Send tests before interviews. This helps you choose the right people faster.</div>
           </div>
 
           <div class="tip-card">
-            <span class="tip-card__tag tag--workflow">🔄 Workflow</span>
+            <span class="tip-card__tag tag--workflow">🔄 Plan</span>
             <div class="tip-card__title">Keep your resume updated</div>
-            <div class="tip-card__desc">Upload a new resume version every time you complete a new project or role. JobsNext lets you store and select from multiple resume versions per application.</div>
+            <div class="tip-card__desc">Upload a new resume when you finish a new job, course, or project.</div>
           </div>
 
         </div>
@@ -3642,7 +3598,7 @@
         <div class="section-header">
           <div class="section-badge">✅ Checklist</div>
           <h2 class="section-title">Getting started checklist</h2>
-          <p class="section-desc" id="checklist-desc">Complete these steps to be fully set up.</p>
+          <p class="section-desc" id="checklist-desc">Do these steps to get ready.</p>
         </div>
 
         <div class="checklist-header">
@@ -3667,8 +3623,8 @@
         <!-- Completion banner -->
         <div class="checklist-complete-banner" id="complete-banner">
           <div style="font-size:2rem;margin-bottom:8px;">🎉</div>
-          <h3>You're all set!</h3>
-          <p id="checklist-complete-msg">You've completed every onboarding step. Good luck — we're rooting for you!</p>
+          <h3>You are ready!</h3>
+          <p id="checklist-complete-msg">You finished all the setup steps. Good luck!</p>
           <button class="btn btn--outlined btn--sm" style="margin-top:var(--space-lg);color:#fff;border-color:rgba(255,255,255,.5);" onclick="resetChecklist()">Reset checklist</button>
         </div>
 
@@ -3688,7 +3644,7 @@
         JobsNext User Guide
       </div>
       <div class="footer-copy">
-        © 2026 JobsNext — Find your next opportunity.
+        © 2026 JobsNext — Find your next job.
       </div>
       <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;">
         <a href="https://jobsnext.com.au/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-body-sm color-variant">Privacy Policy</a>
@@ -3708,7 +3664,7 @@
   <div class="tour-card" id="tour-card">
     <div class="tour-card__step" id="tour-step-label">Step 1 of 6</div>
     <div class="tour-card__title" id="tour-title">Welcome to JobsNext!</div>
-    <div class="tour-card__desc" id="tour-desc">This brief tour will walk you through the key features of the app. You can skip at any time.</div>
+    <div class="tour-card__desc" id="tour-desc">This short tour shows the main parts of the app. You can skip it.</div>
     <div class="tour-card__actions">
       <div class="tour-dots" id="tour-dots" aria-hidden="true"></div>
       <div style="display:flex;gap:var(--space-sm);">
@@ -3736,7 +3692,7 @@
 ═══════════════════════════════════════════════════════════ */
 const CONFIG = {
   appName: 'JobsNext',
-  logoPath: 'jobsnext.png',
+  logoPath: '../assets/images/jobsnext.png',
   screenshotsDir: '',
   /* Screenshot file map - user provided screenshots */
   screenshots: {
@@ -3772,19 +3728,19 @@ const ROLES = {
   jobseeker: {
     totalSteps: 10,
     prefix: 'js',
-    checklistDesc: 'Complete these steps to be fully set up and ready to land your next job.',
-    completeMsg: 'You\'ve completed every onboarding step. Good luck with your job search — we\'re rooting for you!',
+    checklistDesc: 'Do these steps to get ready to find a job.',
+    completeMsg: 'You finished all the steps. Good luck with your job search!',
     checklist: [
-      { id: 'js_c1', category: '👤 Account Setup', title: 'Create your account', desc: 'Sign up as a Jobseeker with your email' },
-      { id: 'js_c2', category: '👤 Account Setup', title: 'Verify your email', desc: 'Enter the 6-digit OTP code sent to your inbox' },
-      { id: 'js_c3', category: '📝 Profile Setup', title: 'Complete profile wizard', desc: 'Add personal information and complete initial setup' },
-      { id: 'js_c4', category: '📝 Profile Setup', title: 'Upload your resume', desc: 'Attach your PDF resume for easy application autofills' },
-      { id: 'js_c5', category: '📝 Profile Setup', title: 'Add 5+ skills', desc: 'Help Jone AI matches rank you higher' },
-      { id: 'js_c6', category: '🔍 Job Search', title: 'Browse jobs', desc: 'Explore listings with advanced filter options' },
-      { id: 'js_c7', category: '🔍 Job Search', title: 'Save 3+ listings', desc: 'Bookmark interesting jobs to your shortlist' },
-      { id: 'js_c8', category: '🔍 Job Search', title: 'Submit your first application', desc: 'Select resume, cover letter, and submit' },
-      { id: 'js_c9', category: '📊 Tracking', title: 'Check status timeline', desc: 'Track updates under the Applied tab' },
-      { id: 'js_c10', category: '⚙️ Security', title: 'Enable App Lock', desc: 'Activate biometric FaceID/PIN lock for privacy' }
+      { id: 'js_c1', category: '👤 Account Setup', title: 'Make your account', desc: 'Sign up as a Jobseeker with your email' },
+      { id: 'js_c2', category: '👤 Account Setup', title: 'Check your email', desc: 'Type the 6-number code from your email' },
+      { id: 'js_c3', category: '📝 Profile Setup', title: 'Finish your profile', desc: 'Add your name and basic details' },
+      { id: 'js_c4', category: '📝 Profile Setup', title: 'Upload your resume', desc: 'Add your resume as a PDF' },
+      { id: 'js_c5', category: '📝 Profile Setup', title: 'Add 5 or more skills', desc: 'This helps Jone AI find better jobs for you' },
+      { id: 'js_c6', category: '🔍 Job Search', title: 'Look at jobs', desc: 'Use search and filters to find jobs' },
+      { id: 'js_c7', category: '🔍 Job Search', title: 'Save 3 or more jobs', desc: 'Save jobs you like' },
+      { id: 'js_c8', category: '🔍 Job Search', title: 'Send your first application', desc: 'Choose a resume, add a letter, and submit' },
+      { id: 'js_c9', category: '📊 Tracking', title: 'Check your status', desc: 'Open Applied to see updates' },
+      { id: 'js_c10', category: '⚙️ Security', title: 'Turn on App Lock', desc: 'Use Face ID, finger scan, or PIN to keep the app safe' }
     ],
     screens: [
       { id: 'js-browse-guest', title: '🔍 Guest Browse' },
@@ -3801,17 +3757,17 @@ const ROLES = {
   employer: {
     totalSteps: 8,
     prefix: 'em',
-    checklistDesc: 'Complete these steps to be ready to manage and hire top talent.',
-    completeMsg: 'You\'ve completed the onboarding flow. You are ready to start hiring on JobsNext!',
+    checklistDesc: 'Do these steps to get ready to hire people.',
+    completeMsg: 'You finished all the steps. You can start hiring on JobsNext!',
     checklist: [
-      { id: 'em_c1', category: '👤 Account Setup', title: 'Register employer account', desc: 'Create account with company email' },
-      { id: 'em_c2', category: '👤 Account Setup', title: 'Verify company email', desc: 'Confirm registration to activate features' },
-      { id: 'em_c3', category: '📝 Company Profile', title: 'Complete branding info', desc: 'Upload company logo, description, and website link' },
-      { id: 'em_c4', category: '📝 Job Postings', title: 'Post your first job', desc: 'Use Jone AI writer to compile description details' },
-      { id: 'em_c5', category: '👥 Candidates', title: 'Review incoming applications', desc: 'Sort applicants by match scores' },
-      { id: 'em_c6', category: '👥 Candidates', title: 'Check candidate details', desc: 'Review resumes and update applicant status flags' },
-      { id: 'em_c7', category: '📝 Assessments', title: 'Build a custom assessment', desc: 'Create question templates to evaluate talent' },
-      { id: 'em_c8', category: '💳 Subscriptions', title: 'Manage billing &amp; credits', desc: 'Purchase and check your job posting credits balance' }
+      { id: 'em_c1', category: '👤 Account Setup', title: 'Make employer account', desc: 'Use your company email' },
+      { id: 'em_c2', category: '👤 Account Setup', title: 'Check company email', desc: 'Confirm your email to turn on tools' },
+      { id: 'em_c3', category: '📝 Company Profile', title: 'Finish company profile', desc: 'Add logo, company text, and website' },
+      { id: 'em_c4', category: '📝 Job Postings', title: 'Post your first job', desc: 'Use Jone AI if you want help writing it' },
+      { id: 'em_c5', category: '👥 Candidates', title: 'Check applications', desc: 'Sort people by match score' },
+      { id: 'em_c6', category: '👥 Candidates', title: 'Check person details', desc: 'Read resumes and change status' },
+      { id: 'em_c7', category: '📝 Assessments', title: 'Make a test', desc: 'Add questions for people to answer' },
+      { id: 'em_c8', category: '💳 Subscriptions', title: 'Manage credits', desc: 'Buy and check job post credits' }
     ],
     screens: [
       { id: 'em-auth', title: '🔐 Auth & Verify' },
@@ -4147,7 +4103,14 @@ hamburger.addEventListener('click', () => {
 /* ══════════════════════════════════════════════════════════
    SCROLL SPY — highlight active nav/side-nav item
 ═══════════════════════════════════════════════════════════ */
-const sections = ['welcome', 'features', 'walkthrough', 'screens', 'faq', 'tips', 'checklist'];
+const mainContent = document.getElementById('main-content');
+const screensSection = document.getElementById('screens');
+const featuresSection = document.getElementById('features');
+if (mainContent && screensSection && featuresSection) {
+  mainContent.insertBefore(screensSection, featuresSection);
+}
+
+const sections = ['welcome', 'screens', 'features', 'walkthrough', 'faq', 'tips', 'checklist'];
 
 function scrollToSection(id) {
   const el = document.getElementById(id);
@@ -4257,32 +4220,36 @@ document.addEventListener('keydown', e => {
 ═══════════════════════════════════════════════════════════ */
 const tourSteps = [
   {
-    title: 'Welcome to JobsNext! 👋',
-    desc: 'This guided tour will walk you through the key features of this user guide. You can use the buttons or press ← → arrow keys to navigate.',
-  },
-  {
-    title: '📖 Step-by-Step Walkthrough',
-    desc: 'The Walkthrough section breaks down onboarding steps for Jobseekers (10 steps) and Employers (8 steps). Toggle roles anytime!',
+    title: 'Welcome to JobsNext!',
+    desc: 'This tour shows the main parts of this guide. Use the buttons to move.',
   },
   {
     title: '📱 Screens Guide',
-    desc: 'The Screens Guide explains every major layout of the mobile app with annotated overlays.',
+    desc: 'The Screens Guide shows each app screen and what the parts do.',
+  },
+  {
+    title: '⚡ Feature Overview',
+    desc: 'Feature Overview shows the main things JobsNext can do.',
+  },
+  {
+    title: '📖 Step-by-Step Walkthrough',
+    desc: 'The Walkthrough gives easy steps for Jobseekers and Employers.',
   },
   {
     title: '❓ FAQ',
-    desc: 'The FAQ section provides fast answers to critical questions about account types, assessments, and profile privacy.',
+    desc: 'FAQ gives short answers to common questions.',
   },
   {
     title: '💡 Tips & Best Practices',
-    desc: 'Browse recommendations, productivity tricks, and common mistakes compiled to optimize your platform usage.',
+    desc: 'Tips show simple ways to use JobsNext better.',
   },
   {
     title: '✅ Dynamic Checklist',
-    desc: 'A checklist that adapts to your role and saves your progress locally. Finish everything to see your completion reward!',
+    desc: 'The checklist helps you remember each setup step.',
   },
   {
-    title: '🎉 You\'re ready!',
-    desc: 'That\'s the full tour. Good luck finding or listing opportunities on JobsNext!',
+    title: 'You are ready!',
+    desc: 'That is the tour. You can now use JobsNext.',
   }
 ];
 
@@ -4316,7 +4283,7 @@ function startTour() {
   updateTourUI();
   document.getElementById('tour-overlay').classList.add('active');
   document.body.style.overflow = 'hidden';
-  const sectionMap = ['welcome', 'features', 'walkthrough', 'screens', 'faq', 'tips', 'checklist'];
+  const sectionMap = ['welcome', 'screens', 'features', 'walkthrough', 'faq', 'tips', 'checklist'];
   scrollToSection(sectionMap[0]);
 }
 
@@ -4324,7 +4291,7 @@ function tourNext() {
   if (tourStep === tourSteps.length - 1) { endTour(); return; }
   tourStep++;
   updateTourUI();
-  const sectionMap = ['welcome', 'features', 'walkthrough', 'screens', 'faq', 'tips', 'checklist'];
+  const sectionMap = ['welcome', 'screens', 'features', 'walkthrough', 'faq', 'tips', 'checklist'];
   if (sectionMap[tourStep]) scrollToSection(sectionMap[tourStep]);
 }
 
